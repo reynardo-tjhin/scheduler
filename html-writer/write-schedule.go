@@ -1,10 +1,10 @@
 package htmlwriter
 
 import (
-	"scheduler/schedule"
+	"scheduler/model"
 )
 
-func WriteHTML(s schedule.Schedule) string {
+func WriteHTML(s model.Schedule) string {
 
 	var result string = "<table>\n"
 
@@ -23,4 +23,5 @@ func WriteHTML(s schedule.Schedule) string {
 	result += "</table>"
 
 	return result
+
 }
